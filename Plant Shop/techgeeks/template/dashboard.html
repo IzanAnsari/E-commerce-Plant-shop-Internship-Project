@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Plant Shop</title>
+ <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+main {
+  padding: 20px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+.plant {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.plant img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.plant h3 {
+  margin: 0;
+}
+
+.plant p {
+  margin: 0;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+ </style>
+</head>
+<body>
+  <header>
+    <h1>Plant Shop</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="donate.html">Donat-us</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="contact us.html">Contact</a></li>
+        <li><a href="login.html">logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="featured-plants">
+      <h2>Featured Plants</h2>
+      <div class="plant">
+        <img src="data:image/jpeg;base64,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" alt="Plant 1">
+        <h3>Plant 1</h3>
+        <p>$19.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+        
+      </div>
+
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMZMIAfs7eyaqMsLU8FzpNQKNfGna3ncJHhQ&usqp=CAU">
+        <h3>Plant 2</h3>
+        <p>$29.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW6ryQdyNnjPirzzLbClSg-Ve9y5ObyMwbdA&usqp=CAU" alt="Plant 2">
+        <h3>Plant 3</h3>
+        <p>$24.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyHQnR4yIIemSOBmoB_UU3zVgyMuZv6xxstg&usqp=CAU">
+        <h3>Plant 4</h3>
+        <p>$29.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBIU0lhDiyb5TPlOTo8rxwHQGWCwbieWo_zw&usqp=CAU">
+        <h3>Plant 5</h3>
+        <p>$9.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoyX7zNMSxoe-xFqeuQq2NTc9AW0T-PtYeNQ&usqp=CAU">
+        <h3>Plant 6</h3>
+        <p>$91.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTLj1dqY3l2muYR5-wwcOu0n7p16s2N7yklQ&usqp=CAU">
+        <h3>Plant 7</h3>
+        <p>$1.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9nxh4PiD2MbThTfDCm0foqaam1VL_XMwJzA&usqp=CAU">
+        <h3>Plant 8</h3>
+        <p>$0.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ATCocMfWuvTY4mQlO-Gd14oX_-El8rqsBg&usqp=CAU">
+        <h3>Plant 9</h3>
+        <p>$8.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWmbifSMRLZiH9sfEizOc3hJFnjPy_mq8nzA&usqp=CAU">
+        <h3>Plant 10</h3>
+        <p>$81.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+
+
+
+      <div class="plant">
+        <img src="data:image/jpeg;base64,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" alt="Plant 1">
+        <h3>Plant 11</h3>
+        <p>$1.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMZMIAfs7eyaqMsLU8FzpNQKNfGna3ncJHhQ&usqp=CAU">
+        <h3>Plant 12</h3>
+        <p>$9.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW6ryQdyNnjPirzzLbClSg-Ve9y5ObyMwbdA&usqp=CAU" alt="Plant 2">
+        <h3>Plant 13</h3>
+        <p>$7.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyHQnR4yIIemSOBmoB_UU3zVgyMuZv6xxstg&usqp=CAU">
+        <h3>Plant 14</h3>
+        <p>$2.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBIU0lhDiyb5TPlOTo8rxwHQGWCwbieWo_zw&usqp=CAU">
+        <h3>Plant 15</h3>
+        <p>$0.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoyX7zNMSxoe-xFqeuQq2NTc9AW0T-PtYeNQ&usqp=CAU">
+        <h3>Plant 16</h3>
+        <p>$1.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTLj1dqY3l2muYR5-wwcOu0n7p16s2N7yklQ&usqp=CAU">
+        <h3>Plant 17</h3>
+        <p>$11.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9nxh4PiD2MbThTfDCm0foqaam1VL_XMwJzA&usqp=CAU">
+        <h3>Plant 18</h3>
+        <p>$0.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ATCocMfWuvTY4mQlO-Gd14oX_-El8rqsBg&usqp=CAU">
+        <h3>Plant 19</h3>
+        <p>$81.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWmbifSMRLZiH9sfEizOc3hJFnjPy_mq8nzA&usqp=CAU">
+        <h3>Plant 20</h3>
+        <p>$31.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+
+      <!-- Add more featured plants here -->
+    </section>
+
+    <section class="all-plants">
+      <h2>All Plants</h2>
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKm-hnhOFG11G9ITcQi-qshIyDi9DZ-UDJA&usqp=CAU" alt="Plant 3">
+        <h3>Plant 3</h3>
+        <p>$14.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGWQcQYGP7kZwN-LyRoc4Hcldrs0NEqQo-0w&usqp=CAU" alt="Plant 4">
+        <h3>Plant 4</h3>
+        <p>$29.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlHyOngO2sEt9WcHjoMLBSq9syKIQnrMoagw&usqp=CAU">
+        <h3>Plant 5</h3>
+        <p>$239.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdatRBX7mRLQrJwsKIepmrcL8MqEmcy_MtUQ&usqp=CAU">
+        <h3>Plant 6</h3>
+        <p>$39.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+      
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxB4ivW-HxjnhMmy3ZNiqmUaOjGmP4kixOhw&usqp=CAU">
+        <h3>Plant 7</h3>
+        <p>$30.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRVdB8apdL7Wg7uA4V0dewi1UC72ItGX9Q0w&usqp=CAU">
+        <h3>Plant 8</h3>
+        <p>$3.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+
+
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKm-hnhOFG11G9ITcQi-qshIyDi9DZ-UDJA&usqp=CAU" alt="Plant 3">
+        <h3>Plant 9</h3>
+        <p>$4.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGWQcQYGP7kZwN-LyRoc4Hcldrs0NEqQo-0w&usqp=CAU" alt="Plant 4">
+        <h3>Plant 10</h3>
+        <p>$9.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlHyOngO2sEt9WcHjoMLBSq9syKIQnrMoagw&usqp=CAU">
+        <h3>Plant 11</h3>
+        <p>$29.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdatRBX7mRLQrJwsKIepmrcL8MqEmcy_MtUQ&usqp=CAU">
+        <h3>Plant 12</h3>
+        <p>$99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+      
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxB4ivW-HxjnhMmy3ZNiqmUaOjGmP4kixOhw&usqp=CAU">
+        <h3>Plant 13</h3>
+        <p>$31.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRVdB8apdL7Wg7uA4V0dewi1UC72ItGX9Q0w&usqp=CAU">
+        <h3>Plant 14</h3>
+        <p>$399</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+
+
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKm-hnhOFG11G9ITcQi-qshIyDi9DZ-UDJA&usqp=CAU" alt="Plant 3">
+        <h3>Plant 15</h3>
+        <p>$1.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGWQcQYGP7kZwN-LyRoc4Hcldrs0NEqQo-0w&usqp=CAU" alt="Plant 4">
+        <h3>Plant 16</h3>
+        <p>$9.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlHyOngO2sEt9WcHjoMLBSq9syKIQnrMoagw&usqp=CAU">
+        <h3>Plant 17</h3>
+        <p>$239.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdatRBX7mRLQrJwsKIepmrcL8MqEmcy_MtUQ&usqp=CAU">
+        <h3>Plant 18</h3>
+        <p>$39.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+      
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxB4ivW-HxjnhMmy3ZNiqmUaOjGmP4kixOhw&usqp=CAU">
+        <h3>Plant 19</h3>
+        <p>$30.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+
+      <div class="plant">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRVdB8apdL7Wg7uA4V0dewi1UC72ItGX9Q0w&usqp=CAU">
+        <h3>Plant 20</h3>
+        <p>$3.99</p>
+        <button><a href="cart.html">Add to Cart</a></button>
+      </div>
+      <!-- Add more plants here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 LEAF NOW Plant Shop. All rights reserved.</p>
+  </footer>
+</body>
+</html>

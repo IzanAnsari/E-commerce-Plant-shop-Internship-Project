@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Plant Shop</title>
+  <style>
+    /* CSS styles for the plant cart */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .cart {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .cart li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    .cart li:last-child {
+      margin-bottom: 0;
+    }
+    
+    .product-image {
+      width: 80px;
+      height: 80px;
+      margin-right: 10px;
+    }
+    
+    .product-details {
+      flex-grow: 1;
+    }
+    
+    .product-name {
+      font-weight: bold;
+    }
+    
+    .product-price {
+      color: #888;
+    }
+    
+    .remove {
+      color: #ff0000;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Plant Shop Cart</h1>
+    <ul class="cart">
+      <li>
+        <img class="product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMZMIAfs7eyaqMsLU8FzpNQKNfGna3ncJHhQ&usqp=CAU" alt="Plant 1">
+        <div class="product-details">
+          <span class="product-name">Plant 1</span>
+          <span class="product-price">$19.99</span>
+        </div>
+        <span class="remove">Buy  Remove </span>
+        <br>
+        
+      </li>
+      <li>
+        <img class="product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW6ryQdyNnjPirzzLbClSg-Ve9y5ObyMwbdA&usqp=CAU" alt="Plant 2">
+        <div class="product-details">
+          <span class="product-name">Plant 2</span>
+          <span class="product-price">$24.99</span>
+        </div>
+        <span class="remove">Buy  Remove </span>
+      </li>
+      <li>
+        <img class="product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyHQnR4yIIemSOBmoB_UU3zVgyMuZv6xxstg&usqp=CAU" alt="Plant 3">
+        <div class="product-details">
+          <span class="product-name">Plant 3</span>
+          <span class="product-price">$14.99</span>
+        </div>
+        <span class="remove">Buy  Remove </span>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
